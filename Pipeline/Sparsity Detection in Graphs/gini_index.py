@@ -1,13 +1,7 @@
 import numpy as np
 
 # Define the set of triples
-triples = [
-    ('Alice', 'likes', 'Bob'),
-    ('Bob', 'dislikes', 'Charlie'),
-    ('Charlie', 'knows', 'Alice'),
-    ('David', 'likes', 'Eve'),
-    ('Eve', 'dislikes', 'Bob'),
-]
+triples = "experiment/data/triples.txt"
 
 # Create a mapping from node names to indices
 node_names = list(set([item for triple in triples for item in [triple[0], triple[2]]]))
